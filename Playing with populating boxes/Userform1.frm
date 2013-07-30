@@ -16,8 +16,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
 Private Sub CommandButton1_Click()
-    'ComboBox1.Clear
-    'ListBox1.Clear
+    
     Dim NC As New Collection
     ' Start at first row
     i = 1
@@ -34,8 +33,6 @@ Private Sub CommandButton1_Click()
             .AddItem Cells(i, TextBox1)
         End With
         
-        ' This will message box each increment of 5
-       
         ' Next cell
         ComboBox1.ListRows = ComboBox1.ListRows + i
         If ComboBox1.ListRows > 40 Then ComboBox1.ListRows = 40
